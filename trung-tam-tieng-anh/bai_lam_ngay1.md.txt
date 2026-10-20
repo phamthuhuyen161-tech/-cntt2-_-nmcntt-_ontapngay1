@@ -1,0 +1,74 @@
+b1:get-location
+b2:get-childitem -force
+b3:move-item -path .\lich_hoc.txt.pptx -destination .\dóc\; move-item -path .\logo_trung_tam.png,bmp, .\anh_lop_hoc.jpg.docx -destination .\media\
+b4:copy-item -path .\media\logo_trung_tam.png.bmp -destination .\archive\
+b5:remove-item -path .\temp_201_tmp_zip
+   remove-item -path .\temp_202_tmp_zip
+b6:set-location .\logs; get-childitem; set location ..
+b7:set-location .\docs; copy-item -path ..\media\anh_lop_hoc.jpg.docx -destination ..\archive\; set-location ..
+* dán b1:C:\Users\ADMIN\Desktop\trung-tam-tieng-anh
+* dán b8: Directory: C:\Users\ADMIN\Desktop\trung-tam-tieng-anh
+
+
+
+    Directory: C:\Users\ADMIN\Desktop\trung-tam-tieng-anh\logs
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/20/2026   9:08 AM              0 access.log.txt
+
+
+PS C:\Users\ADMIN\Desktop\trung-tam-tieng-anh> set-location .\docs; copy-item -path ..\media\anh_lop_hoc.jpg.docx -destination ..\archive\; set-location ..
+PS C:\Users\ADMIN\Desktop\trung-tam-tieng-anh> get-childitem -recurse -force
+
+
+
+    Directory: C:\Users\ADMIN\Desktop\trung-tam-tieng-anh
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        10/20/2026  10:16 AM                archive
+d-----        10/20/2026   9:12 AM                data
+d-----        10/20/2026  10:02 AM                docs
+d-----        10/20/2026   9:34 AM                logs
+d-----        10/20/2026  10:07 AM                media
+-a----        10/20/2026   9:04 AM         495616 .env.accdb
+-a----        10/20/2026   9:00 AM              0 bai_lam_ngay1.md.txt
+
+
+    Directory: C:\Users\ADMIN\Desktop\trung-tam-tieng-anh\archive
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/20/2026   9:05 AM              0 anh_lop_hoc.jpg.docx
+-a----        10/20/2026   9:04 AM              0 logo_trung_tam.png.bmp
+
+
+    Directory: C:\Users\ADMIN\Desktop\trung-tam-tieng-anh\docs
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/20/2026   9:07 AM          59904 hoc_vien_khoa_3.xlxs.pub
+-a----        10/20/2026   9:06 AM              0 lich_hoc.txt.pptx
+
+
+    Directory: C:\Users\ADMIN\Desktop\trung-tam-tieng-anh\logs
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/20/2026   9:08 AM              0 access.log.txt
+
+
+    Directory: C:\Users\ADMIN\Desktop\trung-tam-tieng-anh\media
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/20/2026   9:05 AM              0 anh_lop_hoc.jpg.docx
+-a----        10/20/2026   9:04 AM              0 logo_trung_tam.png.bmp
+   
